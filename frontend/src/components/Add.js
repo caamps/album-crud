@@ -20,7 +20,7 @@ const Add = () => {
     const clickHandler = async(event) => {
         event.preventDefault();
         try{
-            await axios.post("http://localhost:8800/albums", input);
+            await axios.post(process.env.REACT_APP_API_URL + "/albums", input);
             navigate("/");
         }catch (err) {
             console.log(err)

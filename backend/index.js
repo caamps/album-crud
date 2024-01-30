@@ -1,8 +1,6 @@
 import express from "express"; 
 import mysql from "mysql";
 import cors from 'cors';
-import dotenv from 'dotenv';
-dotenv.config();
 
 
 const app = express();
@@ -67,6 +65,6 @@ app.get("/albums/:id", (req, res) => {
     })
 })
 
-app.listen(8800, () => {
+app.listen(process.env.BACK_PORT, () => {
     console.log('connected backend')
 })

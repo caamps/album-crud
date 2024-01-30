@@ -10,7 +10,7 @@ const AlbumList = () => {
     useEffect(() => {
         const fetchAllAlbums = async() => {
             try {
-                const res = await axios.get("http://localhost:8800/albums");
+                const res = await axios.get(process.env.REACT_APP_API_URL + "/albums");
                 setAlbums(res.data)
             }catch(err){
                 console.log(err)
@@ -21,7 +21,7 @@ const AlbumList = () => {
 
     const deleteHandler = async(id) => {
         try {
-            await axios.delete("http://localhost:8800/albums/" + id);
+            await axios.delete(process.env.REACT_APP_API_URL + "/albums/" + id);
             window.location.reload()
         }catch(err){
             console.log(err)

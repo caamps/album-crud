@@ -22,7 +22,7 @@ const Update = () => {
     useEffect(() => {
         const fetchAlbum = async() => {
             try {
-                const res = await axios.get("http://localhost:8800/albums/" + albumId);
+                const res = await axios.get(process.env.REACT_APP_API_URL + "/albums/" + albumId);
                 setInput(res.data[0])
                 console.log(res.data)
             }catch(err){
@@ -40,7 +40,7 @@ const Update = () => {
     const clickHandler = async(event) => {
         event.preventDefault();
         try{
-            await axios.put("http://localhost:8800/albums/" + albumId, input);
+            await axios.put(process.env.REACT_APP_API_URL + "/albums/" + albumId, input);
             navigate("/");
         }catch (err) {
             console.log(err)

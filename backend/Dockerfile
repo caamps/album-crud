@@ -8,8 +8,6 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build
-
 EXPOSE 8800
 
 CMD ["npm", "start"]
