@@ -1,0 +1,100 @@
+body {
+    background-color: #121212;
+    color: white;
+}
+
+.app{
+    height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.albums{
+    display: flex;
+    gap: 40px;
+}
+
+.addHome{
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(65, 155, 155);
+    color: white;
+    font-weight: bold;
+    width: 20%;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+h1 {
+    margin-bottom: 50px;
+  }
+
+.album{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    border-radius: 30px;
+}
+
+img{
+    display:flex;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    background-color: rgb(195, 224, 215);
+}
+
+.delete{
+    width: 50%;
+    border: none;
+    padding: 3px 6px;
+    background-color: rgb(63, 60, 60);
+    cursor: pointer;
+    border-radius: 5px;
+    color: red;
+}
+
+.update{
+    width: 50%;
+    border: none;
+    padding: 3px 6px;
+    background-color: rgb(63, 60, 60);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input{
+    width: 250px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.formButton{
+    border: none;
+    padding: 10px;
+    background-color: lightcoral;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.link-no-decoration {
+    text-decoration: none;
+    color: white;
+  }
